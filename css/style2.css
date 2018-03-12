@@ -1,0 +1,35 @@
+.carousel-item img {
+    filter: brightness(80%) contrast(130%) saturate(70%);
+    -webkit-filter: brightness(80%) contrast(130%) saturate(70%);
+    
+height: 70vh;
+}
+
+body {
+    background-color: #f7f8fa;
+    font-family: Open Sans;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+    z-index: 0;
+}
+
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+    height: 70px;
+    z-index: 1;
+}
+
+.carousel {
+    position:relative;
+    top: 50px;
+}
+
+#contenu {
+    background-color: black;
+    height: 500px;
+}
