@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .carousel-item img {
     filter: brightness(80%) contrast(130%) saturate(70%);
     -webkit-filter: brightness(80%) contrast(130%) saturate(70%);
@@ -32,4 +36,50 @@ nav {
 #contenu {
     background-color: black;
     height: 500px;
+
+}
+
+/* Bouttons */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 2px;
+    font-weight: 600;
+    text-align: center;
+    padding: 11px 12px;
+    box-sizing: border-box;
+    font-size: 66%;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.btn-plein:link,
+.btn-plein:visited {
+
+    color: #ffffff;
+    background: #ec5252;
+    text-decoration: none;
+}
+
+.btn-vide:link,
+.btn-vide:visited {
+
+    color: #686f7a;
+    border: 1px solid #505763;
+}
+
+.btn-plein:hover,
+.btn-plein:active {
+    background-color: #992337;
+    text-decoration: none;
+}
+
+.btn-vide:hover,
+.btn-vide:active {
+    background-color: #eee;
+
 }
