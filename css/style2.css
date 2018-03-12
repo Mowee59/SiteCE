@@ -83,3 +83,29 @@ nav {
     background-color: #eee;
 
 }
+
+input[type="text"] {
+
+    width:100%;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    display: inline-block;
+    text-align: start;
+    border-radius: 2px;
+    padding: 0 15px;
+    font-size:65%;
+    background-color: #f2f3f5;
+    border: 1px solid transparent;
+    height: 45px;
+    transition: background-color 0.5s;
+
+
+}
+
+input[type="text"]:focus {
+  background-color: white;
+  border: 2px solid #f2f3f5;
+  
+  }
