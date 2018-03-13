@@ -10,9 +10,10 @@ height: 70vh;
 }
 
 body {
+    letter-spacing: 1px;
     background-color: #f7f8fa;
     font-family: 'Lato', sans-serif;
-    color: #fff;
+    color: #585858;
     font-weight: 300;
     font-size: 20px;
     z-index: 0;
@@ -35,9 +36,12 @@ nav {
 }
 
 #contenu {
- 
-
+ position: relative;
+top: 60px;
+    
 }
+
+
 
 /* Bouttons */
 
@@ -63,7 +67,7 @@ nav {
 .btn-plein:visited {
     text-decoration: none;
     color: #fff;
-    background: #ec5252;
+    background: #34ace0;
     text-decoration: none;
 }
 
@@ -71,8 +75,8 @@ nav {
 .btn-vide:link,
 .btn-vide:visited {
 
-    color: #686f7a;
-    border: 1px solid #505763;
+    color: #34ace0;
+    border: 1px solid #34ace0;
 }
 
 .btn-plein:hover,
@@ -89,7 +93,7 @@ nav {
 
 input[type="text"] {
 
-    width:400px;
+    width:100%;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -131,7 +135,7 @@ input[type="text"]:focus {
 .btn-search i,
 .btn-search:link i,
 .btn-search:visited i{
-    color: #ec5252;
+    color: #34ace0;
     font-size: 150%;
     margin: 0 auto;
     transition: color 0.5s;
@@ -139,7 +143,7 @@ input[type="text"]:focus {
 
 .btn-search:hover,
 .btn-search:active{
-        background-color: #ec5252;
+        background-color: #34ace0;
 
 }
 .btn-search:hover i,
@@ -153,15 +157,17 @@ input[type="text"]:focus {
 .barre-recherche{
     display: inline-block;
     padding:  0;
-    width: 445px;
+    width: 100%;
+        margin-top: 7.5px;
 }
 
 .logo {
     height: 60px;
     width: auto;
     float: left;
-    color: #ec5252;
-    margin-top: 10px;
+    font-size: 150%;
+    color: #34ace0;
+    margin-top: 7px;
 }
 
 .navigation{
@@ -172,7 +178,7 @@ input[type="text"]:focus {
 
 .navigation li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 5px;
     height: 45px;
     vertical-align: middle;
     
@@ -189,4 +195,74 @@ a i {
       
 color: #555;
     font-size: 150%;
+}
+
+/* Cartes */
+
+.card, .card-img-top {
+    color:rgb(31, 31, 31);
+    border-radius: 0;
+    max-width: 220px;
+}
+
+.card {
+    height: 300px;
+    
+}
+
+.card-img-top {
+    
+    height: 125px;
+}
+
+#test {
+    margin-top: 75px;
+}
+
+.card-list{
+    padding: 0;
+    list-style: none;
+
+}
+
+.card{-webkit-box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
+-moz-box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
+box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
+}
+
+.card-list li {
+    
+}
+
+.card-list li i {
+    color: #34ace0;
+    font-size: 120%;
+    margin-left: 5%;
+}
+
+
+.card-block {
+    margin: 8px;
+}
+
+.card-block h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%
+}
+
+.card-block span{
+    
+    margin-left: 10%;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 130%;
+}
+
+.carousel-caption h3 {
+    font-size: 150%;
+
 }
