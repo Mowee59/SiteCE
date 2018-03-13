@@ -173,9 +173,20 @@ input[type="text"]:focus {
 .navigation li {
     display: inline-block;
     margin-left: 20px;
+    height: 45px;
+    vertical-align: middle;
+    
 }
 
-i {
-  color: #555;
-    font-size: 100%;
+.navigation li a {
+    color: #555;
+    height: 45px;
+    text-decoration: none;
+    
+}
+
+a i {
+      
+color: #555;
+    font-size: 150%;
 }
