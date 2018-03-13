@@ -69,6 +69,7 @@ html {
 
 /*BOUTONS*/
 
+
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -81,11 +82,11 @@ html {
     text-decoration: none;
     transition: background-color 0.2s;
 }
-
+.btn-plein,
 .btn-plein:link,
 .btn-plein:visited {
 
-    color: #ffffff;
+    color: white;
     background: #4eb6fc;
     text-decoration: none;
 }
@@ -111,9 +112,13 @@ html {
 
 
 .navigation li a {
-    color: #555;
+    color: #fff;
     text-decoration: none;
     text-transform: capitalize;
+}
+
+.barre-recherche {
+    padding: 10px 0;
 }
 
 /* Titre */
@@ -124,3 +129,5 @@ h1 {
     font-weight: 300;
     text-transform: uppercase;
 }
+
+

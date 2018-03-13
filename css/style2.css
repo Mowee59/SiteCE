@@ -11,36 +11,37 @@ height: 70vh;
 
 body {
     background-color: #f7f8fa;
-    font-family: Open Sans;
-    color: #555;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
     font-weight: 300;
     font-size: 20px;
     z-index: 0;
 }
 
 nav {
+    box-shadow:  0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: aliceblue;
-    height: 70px;
+    background-color: white;
+    height: 60px;
     z-index: 1;
 }
 
-.carousel {
+.car {
     position:relative;
-    top: 50px;
+    top: 60px;
 }
 
 #contenu {
-    background-color: black;
-    height: 500px;
+ 
 
 }
 
 /* Bouttons */
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -57,14 +58,16 @@ nav {
     transition: background-color 0.5s;
 }
 
+.btn-plein,
 .btn-plein:link,
 .btn-plein:visited {
-
-    color: #ffffff;
+    text-decoration: none;
+    color: #fff;
     background: #ec5252;
     text-decoration: none;
 }
 
+.btn-vide,
 .btn-vide:link,
 .btn-vide:visited {
 
@@ -86,26 +89,93 @@ nav {
 
 input[type="text"] {
 
-    width:100%;
+    width:400px;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
     text-indent: 0px;
     display: inline-block;
     text-align: start;
-    border-radius: 2px;
+    border-radius: 2px 0 0 2px;
     padding: 0 15px;
     font-size:65%;
     background-color: #f2f3f5;
     border: 1px solid transparent;
     height: 45px;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s ;
 
+    margin: auto 0;
+    outline: none;
 
 }
 
 input[type="text"]:focus {
   background-color: white;
   border: 2px solid #f2f3f5;
-  
   }
+
+.btn-search,
+.btn-search:link,
+.btn-search:visited{
+  text-decoration: none;
+  border-radius: 0px 2px 2px 0px;
+    display: inline-block;
+  background-color: #f2f3f5;
+    height: 45px;
+    width: 45px;
+        position: absolute;
+    padding-left: 12px;
+    transition: background-color 0.5s;
+  
+}
+.btn-search i,
+.btn-search:link i,
+.btn-search:visited i{
+    color: #ec5252;
+    font-size: 150%;
+    margin: 0 auto;
+    transition: color 0.5s;
+}
+
+.btn-search:hover,
+.btn-search:active{
+        background-color: #ec5252;
+
+}
+.btn-search:hover i,
+.btn-search:active i{
+    color: #fff;
+    
+    
+    
+}
+
+.barre-recherche{
+    display: inline-block;
+    padding:  0;
+    width: 445px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    float: left;
+    color: #ec5252;
+    margin-top: 10px;
+}
+
+.navigation{
+    float: right;
+    margin: 7px 5px;
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+i {
+  color: #555;
+    font-size: 100%;
+}
