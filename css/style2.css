@@ -81,7 +81,7 @@ nav {
 
 .btn-plein:hover,
 .btn-plein:active {
-    background-color: #992337;
+    background-color: #227093;
     text-decoration: none;
 }
 
@@ -131,8 +131,28 @@ input[type="text"]:focus {
     padding-left: 12px;
     transition: background-color 0.5s;
     top: 0;
-    right: 0px;
+    right: 45px;
+    border-bottom: 2px solid #f2f3f5;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top : 2px solid #f2f3f5;
 
+}
+
+.btn-search-focus {
+    background-color: white;
+    border-bottom: 2px solid #f2f3f5;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top : 2px solid #f2f3f5;
+}
+
+.btn-adv-focus {
+    background-color: white;
+    border-bottom: 2px solid #f2f3f5;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #f2f3f5;
+    border-top : 2px solid #f2f3f5;
 }
 
 .btn-search i,
@@ -158,8 +178,48 @@ input[type="text"]:focus {
 
 }
 
+.btn-adv,
+.btn-adv:link,
+.btn-adv:visited {
+    text-decoration: none;
+    border-radius: 0px 2px 2px 0px;
+    display: inline-block;
+    background-color: #f2f3f5;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    padding-left: 10px;
+    transition: background-color 0.5s;
+    top: 0;
+    right: 0px;
+
+}
+
+.btn-adv i,
+.btn-adv:link i,
+.btn-adv:visited i {
+    color: #34ace0;
+    font-size: 150%;
+    text-align: center;
+    transition: color 0.5s;
+}
+
+.btn-adv:hover,
+.btn-adv:active {
+    background-color: #34ace0;
+
+}
+
+.btn-adv:hover i,
+.btn-adv:active i {
+    color: #fff;
+
+
+
+}
+
 #barre-recherche {
- 
+
     margin-top: 7.5px;
 }
 
