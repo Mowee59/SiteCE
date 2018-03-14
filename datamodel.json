@@ -1,0 +1,34 @@
+{
+  "evenements": {
+    "0": {
+      "nom": "Voyage à Tchernobyl",
+      "date": "Vendredi 30 Mars",
+      "prix": "Gratuit"
+    },
+    "1": {
+      "nom": "Voyage à Tchernobyl",
+      "date": "Vendredi 30 Mars",
+      "prix": "Gratuit"
+    },
+    "2": {
+      "nom": "Voyage à Tchernobyl",
+      "date": "Vendredi 30 Mars",
+      "prix": "Gratuit"
+    },
+    "3": {
+      "nom": "Voyage à Tchernobyl",
+      "date": "Vendredi 30 Mars",
+      "prix": "Gratuit"
+    },
+    "4": {
+      "nom": "Voyage à Tchernobyl",
+      "date": "Vendredi 30 Mars",
+      "prix": "Gratuit"
+    },
+    "5": {
+      "nom": "Voyage à Tchernobyl",
+      "date": "Vendredi 30 Mars",
+      "prix": "Gratuit"
+    }
+  }
+}
