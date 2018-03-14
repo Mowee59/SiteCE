@@ -1,12 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 .carousel-item img {
     filter: brightness(80%) contrast(130%) saturate(70%);
     -webkit-filter: brightness(80%) contrast(130%) saturate(70%);
-    
-height: 70vh;
+
+    height: 70vh;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
 }
 
 nav {
-    box-shadow:  0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
-    position:fixed;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -31,14 +31,14 @@ nav {
 }
 
 .car {
-    position:relative;
+    position: relative;
     top: 60px;
 }
 
 #contenu {
- position: relative;
-top: 60px;
-    
+    position: relative;
+    top: 60px;
+
 }
 
 
@@ -93,7 +93,7 @@ top: 60px;
 
 input[type="text"] {
 
-    width:100%;
+    width: 100%;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -102,11 +102,11 @@ input[type="text"] {
     text-align: start;
     border-radius: 2px 0 0 2px;
     padding: 0 15px;
-    font-size:65%;
+    font-size: 65%;
     background-color: #f2f3f5;
     border: 1px solid transparent;
     height: 45px;
-    transition: background-color 0.5s ;
+    transition: background-color 0.5s;
 
     margin: auto 0;
     outline: none;
@@ -114,27 +114,30 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  background-color: white;
-  border: 2px solid #f2f3f5;
-  }
+    background-color: white;
+    border: 2px solid #f2f3f5;
+}
 
 .btn-search,
 .btn-search:link,
-.btn-search:visited{
-  text-decoration: none;
-  border-radius: 0px 2px 2px 0px;
+.btn-search:visited {
+    text-decoration: none;
+    border-radius: 0px 2px 2px 0px;
     display: inline-block;
-  background-color: #f2f3f5;
+    background-color: #f2f3f5;
     height: 45px;
     width: 45px;
-        position: absolute;
+    position: absolute;
     padding-left: 12px;
     transition: background-color 0.5s;
-  
+    top: 0;
+    right: 0px;
+
 }
+
 .btn-search i,
 .btn-search:link i,
-.btn-search:visited i{
+.btn-search:visited i {
     color: #34ace0;
     font-size: 150%;
     margin: 0 auto;
@@ -142,23 +145,22 @@ input[type="text"]:focus {
 }
 
 .btn-search:hover,
-.btn-search:active{
-        background-color: #34ace0;
+.btn-search:active {
+    background-color: #34ace0;
 
 }
+
 .btn-search:hover i,
-.btn-search:active i{
+.btn-search:active i {
     color: #fff;
-    
-    
-    
+
+
+
 }
 
-.barre-recherche{
-    display: inline-block;
-    padding:  0;
-    width: 100%;
-        margin-top: 7.5px;
+#barre-recherche {
+ 
+    margin-top: 7.5px;
 }
 
 .logo {
@@ -170,7 +172,7 @@ input[type="text"]:focus {
     margin-top: 7px;
 }
 
-.navigation{
+.navigation {
     float: right;
     margin: 7px 5px;
     list-style: none;
@@ -181,37 +183,38 @@ input[type="text"]:focus {
     margin-left: 5px;
     height: 45px;
     vertical-align: middle;
-    
+
 }
 
 .navigation li a {
     color: #555;
     height: 45px;
     text-decoration: none;
-    
+
 }
 
 a i {
-      
-color: #555;
+
+    color: #555;
     font-size: 150%;
 }
 
 /* Cartes */
 
-.card, .card-img-top {
-    color:rgb(31, 31, 31);
+.card,
+.card-img-top {
+    color: rgb(31, 31, 31);
     border-radius: 0;
     max-width: 220px;
 }
 
 .card {
     height: 300px;
-    
+
 }
 
 .card-img-top {
-    
+
     height: 125px;
 }
 
@@ -219,20 +222,19 @@ color: #555;
     margin-top: 75px;
 }
 
-.card-list{
+.card-list {
     padding: 0;
     list-style: none;
 
 }
 
-.card{-webkit-box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
--moz-box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
-box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
+.card {
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
+    box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
 }
 
-.card-list li {
-    
-}
+.card-list li {}
 
 .card-list li i {
     color: #34ace0;
@@ -251,8 +253,8 @@ box-shadow: 0px 0px 3px 1px rgba(135,135,135,1);
     font-size: 120%
 }
 
-.card-block span{
-    
+.card-block span {
+
     margin-left: 10%;
 }
 
