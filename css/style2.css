@@ -261,61 +261,99 @@ a i {
 
 /* Cartes */
 
-.card,
-.card-img-top {
-    color: rgb(31, 31, 31);
-    border-radius: 0;
-    max-width: 220px;
+body {
+  background-color: #eee;
+    padding-top: 50px;
+  font-size:20px;
+
 }
 
+body {
+  background-color: #eee;
+    padding-top: 50px;
+  font-size:20px;
+
+}
+
+.card-block{
+  padding:10px 10px;
+}
 .card {
-    height: 300px;
+  padding:0;
+  height: 300px;
+  border-radius: 0;
+  max-width: 220px;
+  background-color : #fff;
+  box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
+  border: 0px;
 
 }
 
-.card-img-top {
-
-    height: 125px;
+.card-title {
+  font-size: 80%;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 7px;
 }
 
-#test {
-    margin-top: 75px;
+.card-desc{
+  font-size: 60%;
+  font-style: italic;
 }
 
-.card-list {
-    padding: 0;
-    list-style: none;
-
+.info {
+  position: absolute;
+  top:160px;
+  left:0;
+  background-color: #34ACE0;
+  padding:5px;
+  height: 25px;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 60%;
+    display: inline-block;
+  
 }
 
-.card {
-    -webkit-box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
-    -moz-box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
-    box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
+.date span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+ 
+}
+.date {
+  height: 60px;
+  background-color: #34ACE0;
+  width: 40px;
+  position: absolute;
+  top : 0px;
+  right: 0px;
+  color: white;
+  text-align: center;
+  padding-top: 9px;
+  
 }
 
-.card-list li {}
-
-.card-list li i {
-    color: #34ace0;
-    font-size: 120%;
-    margin-left: 5%;
+.date_jour {
+  font-weight: bold;
+  font-size: 100%;
+  
 }
 
-
-.card-block {
-    margin: 8px;
-}
-
-.card-block h3 {
-    text-align: center;
+.date_mois {
     font-weight: bold;
-    font-size: 120%
+    font-size: 50%
 }
 
-.card-block span {
+.date_annee {
+  font-weight: 300;
+  font-size: 50%
+}
 
-    margin-left: 10%;
+.card-img-top {
+  border-radius: 0px;
 }
 
 h2 {
