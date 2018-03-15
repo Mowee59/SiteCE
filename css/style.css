@@ -274,7 +274,11 @@ a i {
   background-color : #fff;
   box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
   border: 0px;
+  transition: transform 0.3s;
+}
 
+.card:hover {
+    transform: scale(1.15);
 }
 
 .card-title {
