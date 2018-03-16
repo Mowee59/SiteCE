@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" href="../Documents/Projets/CE/css/style.css" rel="stylesheet"> </head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <h3 class="form-title">Ajouter un évènement</h3>
+                    </div>
+                    <div class="form-group">
+                        <label class="input-title" for="nomEvent"> Nom de l'événement </label>
+                        <input type="text" id="nomEvent" name="nomEvent" class="form-control" placeholder="Ex : Séjour à San Francisco">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-title" for="tagsEvent">Catégories</label>
+                        <div class="checkbox-inline"> <span><input type="checkbox" value="">Sport</span> <span><input type="checkbox" value="">Voyages</span> <span><input type="checkbox" value="">Formations</span> <span><input type="checkbox" value="">Loisirs</span> </div>
+                    </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label class="input-title" for="jourEvent">Jour</label>
+                                <select class="form-control" id="jourEvent">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="form-group col">
+                                <label class="input-title" for="moisEvent">Mois</label>
+                                <select class="form-control" id="moisEvent">
+                                    <option value="JAN">Janvier</option>
+                                    <option value="FEV">Février</option>
+                                    <option value="MAR">Mars</option>
+                                    <option value="AVR">Avril</option>
+                                    <option value="MAI">Mai</option>
+                                    <option value="JUIN">Juin</option>
+                                    <option value="JUIL">Juillet</option>
+                                    <option value="AOU">Aout</option>
+                                    <option value="SEP">Septembre</option>
+                                    <option value="OCT">Octobre</option>
+                                    <option value="NOV">Novembre</option>
+                                    <option value="DEC">Decembre</option>
+                                </select>
+                            </div>
+                            <div class="form-group col">
+                                <label class="input-title" for="jourEvent">Année</label>
+                                <select class="form-control" id="anneeEvent">
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    <div class="form-group">
+                        <label class="input-title" for="file">Image</label>
+                        <div class="input-group">
+                            <label class="input-group-btn"> <span class="btn btn-plein">
+                        Charger <input type="file" style="display: none;">
+                    </span> </label>
+                            <input type="text" id="chemin" class="form-control" readonly> </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="input-title" for="desc">Description</label>
+                            <textarea class="form-control" rows="5" id="desc"> </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group"> <a href="#" class="btn btn-plein btn-ajouter">Ajouter</a> </div>
+                    
+            </form>
+        </div>
+    </div>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

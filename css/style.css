@@ -138,6 +138,7 @@ input[type='text']:focus
 {
     border: 2px solid #f2f3f5;
     background-color: white;
+    outline: none;
 }
 
 .btn-search,
@@ -445,10 +446,10 @@ form
 
     overflow: hidden;
 }
-.btn-file input[type=file]
+ input[type=file]
 {
     font-size: 100px;
-
+    outline: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -458,6 +459,7 @@ form
     min-width: 100%;
     min-height: 100%;
 
+    
     cursor: inherit;
     text-align: right;
 
@@ -490,6 +492,8 @@ form
     background-color: #f2f3f5;
 }
 
+
+
 .form-title
 {
     font-size: 150%;
@@ -502,13 +506,18 @@ form
     color: #34ace0;
 }
 
-.checkbox-inline
+.checkbox-inline span
 {
     font-size: 80%;
+    margin-right: 2%;
 }
 
 input[type='checkbox']
 {
-    margin-right: .3em;
-    margin-left: 2%;
+       margin-right: .3em;
+    outline: none;
+}
+
+.input-title{
+    margin: 0;
 }
