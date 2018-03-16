@@ -4,10 +4,10 @@ var cards = (function () {
 
     return {
 
-        createCard: function (event) {
+        createCard: function (event, key) {
 
 
-
+            console.log(key);
             var img = document.createElement('img');
             img.className = "card-img-top img-fluid";
             img.src = 'http://via.placeholder.com/220x170';
@@ -60,36 +60,13 @@ var cards = (function () {
 
 
             card.appendChild(block);
+            card.dataset.key = key;
 
 
             return card;
         },
 
-        drawSectionRecent: function () {
-
-
-            var events = firebase.database().ref('test');
-            var contenu = document.querySelector("#contenu");
-            var row = document.createElement('div');
-            row.className = "row";
-            contenu.appendChild(row);
-
-
-
-            for (let i = 0; i < key.length; i++) {
-
-                let col = document.createElement('div');
-                col.className = "col-md";
-                var mycard = cards
-
-                col.appendChild(mycard);
-                row.appendChild(col);
-
-
-            }
-
-
-        }
+        
     }
 
 }());

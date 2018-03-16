@@ -21,12 +21,10 @@ var evenements = (function () {
             /* Modifier syntaxe */
             for (let key of keys) {
                 
-                console.log('k', key);
-                console.log(eventsRef.child(key))
                 
                 let col = document.createElement('div');
                 col.className = "col-md";
-                var mycard = cards.createCard(events[key])
+                var mycard = cards.createCard(events[key], key)
 
                 col.appendChild(mycard);
                 row.appendChild(col);
