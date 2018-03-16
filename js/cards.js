@@ -68,10 +68,7 @@ var cards = (function () {
             return card;
         },
             
-            displayLastEvents: function(){
-                
-        eventsRef.limitToLast(4).once('value').then(evenements.lastEvents, evenements.errorData);
-            }
+          
         
     }
 
