@@ -274,7 +274,11 @@ a i {
   background-color : #fff;
   box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
   border: 0px;
+  transition: transform 0.3s;
+}
 
+.card:hover {
+    transform: scale(1.15);
 }
 
 .card-title {
@@ -291,7 +295,7 @@ a i {
 
 .info {
   position: absolute;
-  top:160px;
+  top:145px;
   left:0;
   background-color: #34ACE0;
   padding:5px;
@@ -345,7 +349,7 @@ a i {
 }
 
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 40px;
     font-size: 130%;
 }
