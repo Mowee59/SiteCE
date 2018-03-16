@@ -295,7 +295,7 @@ a i {
 
 .info {
   position: absolute;
-  top:160px;
+  top:145px;
   left:0;
   background-color: #34ACE0;
   padding:5px;
@@ -349,7 +349,7 @@ a i {
 }
 
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 40px;
     font-size: 130%;
 }

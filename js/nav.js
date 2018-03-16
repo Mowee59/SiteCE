@@ -1,4 +1,4 @@
-var nav = (function () {
+(function () {
 
     var search = document.getElementById("search");
     var adv = document.getElementById("adv");
@@ -16,4 +16,4 @@ var nav = (function () {
 
     });
 
-})();
+}());

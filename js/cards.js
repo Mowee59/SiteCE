@@ -2,81 +2,94 @@
 
 var cards = (function () {
 
+    return {
 
-        return {
-
-            createCard: function (date, infocontent, titre, desc, image) {
-                /* Fonction qui retourne une carte créé 
-        
-        Le format de la date est du type : 
-        
-        
-                var date = {
-                    jour: 16,
-                    mois: 'OCT',
-                    annee: "2018"
-
-                };
-    
-        A implement dans la base de donné pour la récuperer plus rapidement */
+        createCard: function (event) {
 
 
-                var img = document.createElement('img');
-                img.className = "card-img-top img-fluid";
-                img.src = image;
 
-                var card = document.createElement('div');
-                card.className = 'card';
-                var block = document.createElement('div');
-                block.className = 'card-block';
-                var info = document.createElement('div');
-                info.className = 'info';
+            var img = document.createElement('img');
+            img.className = "card-img-top img-fluid";
+            img.src = 'http://via.placeholder.com/220x170';
 
-                var card_desc = document.createElement('div');
-                card_desc = document.createElement('div');
-                card_desc.className = "card-desc";
-                card_desc.innerHTML = desc;
+            var card = document.createElement('div');
+            card.className = 'card';
+            var block = document.createElement('div');
+            block.className = 'card-block';
+            var info = document.createElement('div');
+            info.className = 'info';
 
-                var title = document.createElement('h3');
-                title.className = 'card-title';
-                title.innerHTML = titre;
-                info.innerHTML = infocontent;
+            var card_desc = document.createElement('div');
+            card_desc = document.createElement('div');
+            card_desc.className = "card-desc";
+            card_desc.innerHTML = event.desc;
 
-                var info_date = document.createElement('p');
-                info_date.className = "date";
-                var tjour = document.createElement('span');
-                tjour.className = "date_jour";
-                tjour.innerHTML = date.jour;
+            var title = document.createElement('h3');
+            title.className = 'card-title';
+            title.innerHTML = event.nom;
+            info.innerHTML = event.lieu;
 
-                var tmois = document.createElement('span');
-                tmois.className = "date_mois";
-                tmois.innerHTML = date.mois;
+            var info_date = document.createElement('p');
+            info_date.className = "date";
+            var tjour = document.createElement('span');
+            tjour.className = "date_jour";
+            tjour.innerHTML = event.date.jour;
 
-                var tannee = document.createElement('span');
-                tannee.className = "date_annee";
-                tannee.innerHTML = date.annee;
+            var tmois = document.createElement('span');
+            tmois.className = "date_mois";
+            tmois.innerHTML = event.date.mois;
 
-                card.appendChild(img);
+            var tannee = document.createElement('span');
+            tannee.className = "date_annee";
+            tannee.innerHTML = event.date.annee;
 
-                info_date.appendChild(tjour);
-                info_date.appendChild(tmois);
-                info_date.appendChild(tannee);
+            card.appendChild(img);
 
-                block.appendChild(title);
-                block.appendChild(card_desc);
-                block.appendChild(info);
-                block.appendChild(info_date);
+            info_date.appendChild(tjour);
+            info_date.appendChild(tmois);
+            info_date.appendChild(tannee);
+            card.appendChild(info);
+            card.appendChild(info_date);
+
+            block.appendChild(title);
+            block.appendChild(card_desc);
 
 
 
 
 
 
-                card.appendChild(block);
+            card.appendChild(block);
 
 
-                return card;
+            return card;
+        },
+
+        drawSectionRecent: function () {
+
+
+            var events = firebase.database().ref('test');
+            var contenu = document.querySelector("#contenu");
+            var row = document.createElement('div');
+            row.className = "row";
+            contenu.appendChild(row);
+
+
+
+            for (let i = 0; i < key.length; i++) {
+
+                let col = document.createElement('div');
+                col.className = "col-md";
+                var mycard = cards
+
+                col.appendChild(mycard);
+                row.appendChild(col);
+
+
             }
+
+
         }
+    }
 
 }());
