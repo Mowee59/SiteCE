@@ -387,13 +387,14 @@ h2 {
     font-size: 150%;
 }
 
-
-form {
+    
+.formulaire {
+    
     max-width: 800px;
     margin: 0 auto;
     padding: 2% 4%;
 
-    background-color: white;
+    background-color: white;   
 }
 
 .btn-file {
@@ -487,4 +488,5 @@ input[type='checkbox'] {
     border: 1px solid #d45252;
     box-shadow: 0 0 3px #d45252;
 }
+
 
