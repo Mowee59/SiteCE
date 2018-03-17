@@ -2,6 +2,8 @@
 
 var cards = (function () {
 
+    var eventsRef = firebase.database().ref('test') ;   
+    
     return {
 
         createCard: function (event, key) {
@@ -65,7 +67,8 @@ var cards = (function () {
 
             return card;
         },
-
+            
+          
         
     }
 

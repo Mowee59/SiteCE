@@ -9,11 +9,12 @@
 
     function () {
 
+            var eventsRef = firebase.database().ref('test');
 
 
         /* Affichage de sderniers évenements ajoutés */
 
-        firebase.database().ref('test').limitToLast(4).once('value').then(evenements.lastEvents, evenements.errorData)
+        eventsRef.limitToLast(4).once('value').then(evenements.lastEvents, evenements.errorData);
 
 
         /* A supprimer, pour afficher un espace sous les cartes */

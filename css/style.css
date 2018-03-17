@@ -3,31 +3,36 @@
 }
 
 .carousel-item img {
+    height: 70vh;
+
     filter: brightness(80%) contrast(130%) saturate(70%);
     -webkit-filter: brightness(80%) contrast(130%) saturate(70%);
-
-    height: 70vh;
 }
 
 body {
-    letter-spacing: 1px;
-    background-color: #f7f8fa;
     font-family: 'Lato', sans-serif;
-    color: #585858;
-    font-weight: 300;
     font-size: 20px;
+    font-weight: 300;
+
     z-index: 0;
+
+    letter-spacing: 1px;
+
+    color: #585858;
+    background-color: #f7f8fa;
 }
 
 nav {
-    box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
+
     width: 100%;
-    background-color: white;
     height: 60px;
-    z-index: 1;
+
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
 }
 
 .car {
@@ -38,7 +43,6 @@ nav {
 #contenu {
     position: relative;
     top: 60px;
-
 }
 
 
@@ -48,313 +52,441 @@ nav {
 .btn,
 .btn:link,
 .btn:visited {
+    font-size: 66%;
+    font-weight: 600;
+
     display: inline-block;
+
+    box-sizing: border-box;
+    padding: 11px 12px;
+
+    transition: background-color .5s;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+
     -webkit-border-radius: 3;
     -moz-border-radius: 3;
     border-radius: 2px;
-    font-weight: 600;
-    text-align: center;
-    padding: 11px 12px;
-    box-sizing: border-box;
-    font-size: 66%;
-    text-transform: capitalize;
-    text-decoration: none;
-    transition: background-color 0.5s;
 }
 
 .btn-plein,
 .btn-plein:link,
 .btn-plein:visited {
     text-decoration: none;
+    text-decoration: none;
+
     color: #fff;
     background: #34ace0;
-    text-decoration: none;
 }
 
 .btn-vide,
 .btn-vide:link,
 .btn-vide:visited {
-
     color: #34ace0;
     border: 1px solid #34ace0;
 }
 
 .btn-plein:hover,
 .btn-plein:active {
-    background-color: #227093;
     text-decoration: none;
+
+    background-color: #227093;
 }
 
 .btn-vide:hover,
 .btn-vide:active {
     background-color: #eee;
-
 }
 
-input[type="text"] {
+input[type='text'] {
+    font-size: 65%;
+
+    display: inline-block;
 
     width: 100%;
+    height: 45px;
+    margin: auto 0;
+    padding: 0 15px;
+
+    transition: background-color .5s;
+    text-align: start;
+    text-indent: 0;
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
-    text-indent: 0px;
-    display: inline-block;
-    text-align: start;
-    border-radius: 2px 0 0 2px;
-    padding: 0 15px;
-    font-size: 65%;
-    background-color: #f2f3f5;
+
     border: 1px solid transparent;
-    height: 45px;
-    transition: background-color 0.5s;
-
-    margin: auto 0;
+    border-radius: 2px 0 0 2px;
     outline: none;
-
+    background-color: #f2f3f5;
 }
 
-input[type="text"]:focus {
-    background-color: white;
+input[type='text']:focus {
     border: 2px solid #f2f3f5;
+    background-color: white;
+    outline: none;
 }
 
 .btn-search,
 .btn-search:link,
 .btn-search:visited {
-    text-decoration: none;
-    border-radius: 0px 2px 2px 0px;
-    display: inline-block;
-    background-color: #f2f3f5;
-    height: 45px;
-    width: 45px;
     position: absolute;
-    padding-left: 12px;
-    transition: background-color 0.5s;
     top: 0;
     right: 45px;
+
+    display: inline-block;
+
+    width: 45px;
+    height: 45px;
+    padding-left: 12px;
+
+    transition: background-color .5s;
+    text-decoration: none;
+
+    border-top: 2px solid #f2f3f5;
+    border-right: 2px solid transparent;
     border-bottom: 2px solid #f2f3f5;
     border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-top : 2px solid #f2f3f5;
-
+    border-radius: 0 2px 2px 0;
+    background-color: #f2f3f5;
 }
 
 .btn-search-focus {
-    background-color: white;
+    border-top: 2px solid #f2f3f5;
+    border-right: 2px solid transparent;
     border-bottom: 2px solid #f2f3f5;
     border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-top : 2px solid #f2f3f5;
+    background-color: white;
 }
 
 .btn-adv-focus {
-    background-color: white;
+    border-top: 2px solid #f2f3f5;
+    border-right: 2px solid #f2f3f5;
     border-bottom: 2px solid #f2f3f5;
     border-left: 2px solid transparent;
-    border-right: 2px solid #f2f3f5;
-    border-top : 2px solid #f2f3f5;
+    background-color: white;
 }
 
 .btn-search i,
 .btn-search:link i,
 .btn-search:visited i {
-    color: #34ace0;
     font-size: 150%;
+
     margin: 0 auto;
-    transition: color 0.5s;
+
+    transition: color .5s;
+
+    color: #34ace0;
 }
 
 .btn-search:hover,
 .btn-search:active {
     background-color: #34ace0;
-
 }
 
 .btn-search:hover i,
 .btn-search:active i {
     color: #fff;
-
-
-
 }
 
 .btn-adv,
 .btn-adv:link,
 .btn-adv:visited {
-    text-decoration: none;
-    border-radius: 0px 2px 2px 0px;
-    display: inline-block;
-    background-color: #f2f3f5;
-    height: 45px;
-    width: 45px;
     position: absolute;
-    padding-left: 10px;
-    transition: background-color 0.5s;
     top: 0;
-    right: 0px;
+    right: 0;
 
+    display: inline-block;
+
+    width: 45px;
+    height: 45px;
+    padding-left: 10px;
+
+    transition: background-color .5s;
+    text-decoration: none;
+
+    border-radius: 0 2px 2px 0;
+    background-color: #f2f3f5;
 }
 
 .btn-adv i,
 .btn-adv:link i,
 .btn-adv:visited i {
-    color: #34ace0;
     font-size: 150%;
+
+    transition: color .5s;
     text-align: center;
-    transition: color 0.5s;
+
+    color: #34ace0;
 }
 
 .btn-adv:hover,
 .btn-adv:active {
     background-color: #34ace0;
-
 }
 
 .btn-adv:hover i,
 .btn-adv:active i {
     color: #fff;
-
-
-
 }
 
 #barre-recherche {
-
     margin-top: 7.5px;
 }
 
 .logo {
-    height: 60px;
-    width: auto;
-    float: left;
     font-size: 150%;
-    color: #34ace0;
+
+    float: left;
+
+    width: auto;
+    height: 60px;
     margin-top: 7px;
+
+    color: #34ace0;
 }
 
 .navigation {
     float: right;
+
     margin: 7px 5px;
+
     list-style: none;
 }
 
 .navigation li {
     display: inline-block;
-    margin-left: 5px;
-    height: 45px;
-    vertical-align: middle;
 
+    height: 45px;
+    margin-left: 5px;
+
+    vertical-align: middle;
 }
 
 .navigation li a {
-    color: #555;
     height: 45px;
+
     text-decoration: none;
 
+    color: #555;
 }
 
 a i {
+    font-size: 150%;
 
     color: #555;
-    font-size: 150%;
 }
 
 /* Cartes */
 
-
-
-.card-block{
-  padding:10px 10px;
+.card-block {
+    padding: 10px 10px;
 }
+
 .card {
-  padding:0;
-  height: 300px;
-  border-radius: 0;
-  max-width: 220px;
-  background-color : #fff;
-  box-shadow: 0px 0px 3px 1px rgba(135, 135, 135, 1);
-  border: 0px;
-  transition: transform 0.3s;
+    max-width: 220px;
+    height: 300px;
+    padding: 0;
+
+    transition: transform .3s;
+
+    border: 0;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3px 1px rgba(135, 135, 135, 1);
 }
 
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .card-title {
-  font-size: 80%;
-  font-weight: bold;
-  color: #444;
-  margin-bottom: 7px;
+    font-size: 80%;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #444;
 }
 
-.card-desc{
-  font-size: 60%;
-  font-style: italic;
+.card-desc {
+    font-size: 60%;
+    font-style: italic;
 }
 
 .info {
-  position: absolute;
-  top:145px;
-  left:0;
-  background-color: #34ACE0;
-  padding:5px;
-  height: 25px;
-  color: white;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 60%;
+    font-size: 60%;
+    font-weight: bold;
+    font-style: italic;
+
+    position: absolute;
+    top: 145px;
+    left: 0;
+
     display: inline-block;
-  
+
+    height: 25px;
+    padding: 5px;
+
+    color: white;
+    background-color: #34ace0;
 }
 
 .date span {
-  display: block;
-  margin: 0;
-  padding: 0;
-  line-height: 100%;
- 
+    line-height: 100%;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
 }
+
 .date {
-  height: 60px;
-  background-color: #34ACE0;
-  width: 40px;
-  position: absolute;
-  top : 0px;
-  right: 0px;
-  color: white;
-  text-align: center;
-  padding-top: 9px;
-  
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 40px;
+    height: 60px;
+    padding-top: 9px;
+
+    text-align: center;
+
+    color: white;
+    background-color: #34ace0;
 }
 
 .date_jour {
-  font-weight: bold;
-  font-size: 100%;
-  
+    font-size: 100%;
+    font-weight: bold;
 }
 
 .date_mois {
+    font-size: 50%;
     font-weight: bold;
-    font-size: 50%
 }
 
 .date_annee {
-  font-weight: 300;
-  font-size: 50%
+    font-size: 50%;
+    font-weight: 300;
 }
 
 .card-img-top {
-  border-radius: 0px;
+    border-radius: 0;
 }
 
 h2 {
-    margin-bottom: 20px;
-    margin-top: 40px;
     font-size: 130%;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .carousel-caption h3 {
     font-size: 150%;
-
 }
+
+    
+.formulaire {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2% 4%;
+
+    background-color: white;   
+}
+
+.btn-file {
+    position: relative;
+
+    overflow: hidden;
+}
+
+input[type=file] {
+    font-size: 100px;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    min-width: 100%;
+    min-height: 100%;
+
+
+    cursor: inherit;
+    text-align: right;
+
+    opacity: 0;
+    outline: none;
+    background: white;
+
+    filter: alpha(opacity=0);
+}
+
+#browseFile {
+    display: block;
+}
+
+#chemin {
+    margin: 0;
+}
+
+.btn-ajouter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#desc {
+    border-radius: 0;
+    background-color: #f2f3f5;
+}
+
+
+
+.form-title {
+    font-size: 125 %;
+    font-weight: bold;
+
+    margin-bottom: 4%;
+
+    text-align: center;
+
+    color: #34ace0;
+}
+
+.checkbox-inline span {
+    font-size: 80%;
+    margin-right: 2%;
+}
+
+input[type='checkbox'] {
+    margin-right: .3em;
+    outline: none;
+}
+
+.input-title {
+    margin: 0;
+}
+
+.invalid {
+    display: none;
+    font-size: 60%;
+    color: #d45252;
+    position: relative;
+    top: -5px;
+}
+
+.correct{
+   box-shadow:  0 0 3px #5cd053;
+    border:  #28921f;
+}
+
+.not-correct{
+    border: 1px solid #d45252;
+    box-shadow: 0 0 3px #d45252;
+}
+
+
