@@ -5,7 +5,7 @@
         authDomain: "projet-cf4f8.firebaseapp.com",
         databaseURL: "https://projet-cf4f8.firebaseio.com",
         projectId: "projet-cf4f8",
-        storageBucket: "",
+        storageBucket: "projet-cf4f8.appspot.com",
         messagingSenderId: "830951586660"
     };
           
