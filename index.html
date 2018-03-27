@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-    <title>Starter Template for Bootstrap</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Paper Bird C.E - Accueil</title>
     <!-- Bootstrap core CSS -->
     <link type="text/css" href="css/normalize.css" rel="stylesheet">
     <link type="text/css" href="css/ionicons.css" rel="stylesheet">
@@ -46,20 +45,21 @@
 
 
                     <div class="col-md">
+                        <!--
                         <ul class="navigation">
-                            <!--  TODO: Navbar vraiment responsive-->
-                            <!--
-                       <li>
-                           <a href="#"><i class="ion-grid"></i> Catégories</a>
-                       </li>
-                 
-                        <li>
-                            <a><i class="ion-android-star-outline"></i></a>
-                        </li>
--->
+
                             <li><a class="btn btn-vide" href="#">Inscription</a></li>
 
                             <li><a class="btn btn-plein" href="#" data-toggle="modal" data-target="#connexion">Connexion</a></li>
+
+                        </ul> 
+-->
+                        <ul class="navigation">
+
+                            <li><i data-toggle="tooltip" title="Ajouter un évènement" class="ion-plus-circled"></i></li>
+                            <li><a class="btn btn-vide" href="#">Déconnexion</a></li>
+
+                            <!--                            <li><a class="btn btn-plein" href="#" data-toggle="modal" data-target="#connexion">Connexion</a></li>-->
 
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
                         <h4 class="modal-title" id="connexionLabel">Entrez vos Identifiants</h4>
                     </div>
                     <div class="modal-body">
-                        <form id='formLogIn'>
+                        <form id="formLogIn">
                             <input type="text" id="mailLogIn" class="loginInput" placeholder="Ex: name@domain.fr">
                             <span class="invalid-hidden">Adresse e-mail invalide</span>
                             <input type="password" id="mdpLogIn" class="loginInput" placeholder="Mot de passe">
@@ -138,11 +138,46 @@
 
 
         <div class="row">
-            <div class="col" id="lastevents">
+            <div class="col">
                 <h2>Derniers évènements ajoutés</h2>
             </div>
         </div>
+
     </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <a href="#" class="btn btn-plein" id="plus">Voir plus d'évènements</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="footer-nav">
+                        <li><a href="#">Acceuil</a></li>
+                        <li><a href="#">Recherche Avancée</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="social">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2018 par Paper Bird. Tout droits reservés.
+                </p>
+            </div>
+        </div>
+    </footer>
     <!-- Firebase SDK
     ================================================== -->
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>

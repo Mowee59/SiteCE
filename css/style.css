@@ -102,7 +102,7 @@ nav {
 }
 
 input[type='text'],
-input[type='password']{
+input[type='password'] {
     font-size: 65%;
 
     display: inline-block;
@@ -295,7 +295,7 @@ a i {
     padding: 0;
     margin: 15px auto;
     transition: transform .3s;
-    
+
     border: 0;
     border-radius: 0;
     background-color: #fff;
@@ -319,7 +319,7 @@ a i {
 .card-desc {
     font-size: 60%;
     font-style: italic;
-  margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 .info {
@@ -394,17 +394,17 @@ h2 {
     font-size: 150%;
 }
 
-    
+
 .formulaire {
-    
+
     position: relative;
     top: 75px;
-    
+
     max-width: 800px;
     margin: 0 auto;
     padding: 2% 4%;
 
-    background-color: white;   
+    background-color: white;
 }
 
 .btn-file {
@@ -457,8 +457,7 @@ input[type=file] {
 
 
 .form-title {
-    font-size: 125 %;
-    font-size: 125 %;
+    font-size: 125%;
     font-weight: bold;
 
     margin-bottom: 4%;
@@ -482,7 +481,7 @@ input[type='checkbox'] {
     margin: 0;
 }
 
-.invalid-hidden{
+.invalid-hidden {
     display: none;
     font-size: 60%;
     color: #d45252;
@@ -494,18 +493,18 @@ input[type='checkbox'] {
     display: inline-block;
 }
 
-.correct{
-   box-shadow:  0 0 3px #5cd053;
-    border:  #28921f;
+.correct {
+    box-shadow: 0 0 3px #5cd053;
+    border: #28921f;
 }
 
-.not-correct{
+.not-correct {
     border: 1px solid #d45252;
     box-shadow: 0 0 3px #d45252;
 }
 
 #mdpLogIn,
-#mailLogIn{
+#mailLogIn {
     margin: 10px auto;
     border: 2px solid #ccc;
 }
@@ -515,51 +514,152 @@ input[type='checkbox'] {
     background-color: #89c7e2;
 }
 
-.modal-title{
+.modal-title {
     font-size: 90%;
     width: 100%;
     margin: 0 15px;
 }
 
-.modal-footer .btn{
+.modal-footer .btn {
     width: 100%;
 }
 
 .categorie {
-  font-size : 50%;
-  font-weight: bold;
-  text-decoration: underlign;
-  margin-bottom: 0.3em;
+    font-size: 50%;
+    font-weight: bold;
+    text-decoration: underlign;
+    margin-bottom: 0.3em;
 }
 
-.list_tags{
-  list-style-type: none;
-  margin:1%;
-  display:flex;
-  flex-wrap:wrap;
-margin-top: 0.5em;  
-  padding:0;
-  
+.list_tags {
+    list-style-type: none;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+    padding: 0;
+
 }
 
 .list_tags li {
-  background-color : #227093;
-  padding:0.5em;
-  display:inline-block;
-  font-size: 50%;
-  max-height: 28px;
-  font-weight: bold;
-  color: white;
-  margin-right: 5%;
-  margin-bottom: 0.3em;
+    background-color: #227093;
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 50%;
+    max-height: 28px;
+    font-weight: bold;
+    color: white;
+    margin-right: 5%;
+    margin-bottom: 0.3em;
     vertical-align: middle;
- 
+
 }
 
 .list_tags li i {
-  margin:0;
-  margin-right : 0.25em;
-  font-size: 130%;
-  vertical-align: middle;
+    margin: 0;
+    margin-right: 0.25em;
+    font-size: 130%;
+    vertical-align: middle;
+
+}
+
+#plus {
+    margin: 50px 0;
+    font-size: 120%;
+    text-transform: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 3px 1px rgba(135, 135, 135, 1);
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+
+}
+
+.footer-nav {
+    list-style-type: none;
+    float: left;
+    font-size: 80%;
+}
+
+.social {
+    list-style-type: none;
+    float: right;
+
+
+}
+
+.footer-nav li,
+.social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social li a:link,
+.social li a:visited {
+    text-decoration: none;
+    color: #888;
+    transition: color 0.5s;
+
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+    font-size: 80%;
+    color: #888;
+}
+
+.social li a i {
+    transition: color 0.5s;
+    font-size: 120%;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.navigation li i {
+    font-size: 170%;
+    color: #34ace0;
+    vertical-align: middle;
+    transition: color 0.5s;
+    margin-right: 10px;
+}
+
+.navigation li i:hover {
+    color: #227093;
+}
+
+.tooltip {
+    font-size: 100%;
+    line-height: 100px;
+}
+
+.tooltip-inner {
+  max-width: 400px;
 
 }
