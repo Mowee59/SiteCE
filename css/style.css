@@ -17,6 +17,7 @@ body {
     z-index: 0;
 
     letter-spacing: 1px;
+    outline: none;
 
     color: #585858;
     background-color: #f7f8fa;
@@ -90,16 +91,18 @@ nav {
 .btn-plein:hover,
 .btn-plein:active {
     text-decoration: none;
-
+    cursor: pointer;
     background-color: #227093;
 }
 
 .btn-vide:hover,
 .btn-vide:active {
     background-color: #eee;
+    cursor: pointer;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='password']{
     font-size: 65%;
 
     display: inline-block;
@@ -183,11 +186,13 @@ input[type='text']:focus {
 .btn-search:hover,
 .btn-search:active {
     background-color: #34ace0;
+    cursor: pointer;
 }
 
 .btn-search:hover i,
 .btn-search:active i {
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-adv,
@@ -229,6 +234,7 @@ input[type='text']:focus {
 .btn-adv:hover i,
 .btn-adv:active i {
     color: #fff;
+    cursor: pointer;
 }
 
 #barre-recherche {
@@ -288,9 +294,9 @@ a i {
     max-width: 220px;
     height: 300px;
     padding: 0;
-
+    margin: 15px auto;
     transition: transform .3s;
-    margin-top: 20px;
+    
     border: 0;
     border-radius: 0;
     background-color: #fff;
@@ -299,6 +305,7 @@ a i {
 
 .card:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .card-title {
@@ -474,7 +481,7 @@ input[type='checkbox'] {
     margin: 0;
 }
 
-.invalid {
+.invalid-hidden{
     display: none;
     font-size: 60%;
     color: #d45252;
@@ -482,7 +489,7 @@ input[type='checkbox'] {
     top: -5px;
 }
 
-.invalid-display {
+.show {
     display: inline-block;
 }
 
@@ -496,4 +503,23 @@ input[type='checkbox'] {
     box-shadow: 0 0 3px #d45252;
 }
 
+#mdpLogIn,
+#mailLogIn{
+    margin: 10px auto;
+    border: 2px solid #ccc;
+}
 
+.modal-header,
+.modal-footer {
+    background-color: #89c7e2;
+}
+
+.modal-title{
+    font-size: 90%;
+    width: 100%;
+    margin: 0 15px;
+}
+
+.modal-footer .btn{
+    width: 100%;
+}

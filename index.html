@@ -30,19 +30,22 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-1">
                         <img src="" alt="Logo" class="logo">
                     </div>
                     <div class="col-md-6 ">
                         <div class="container-fluid" id="barre-recherche">
                             <div class="col-md-12">
                                 <input type="text" id="input-nav" placeholder="Recherccher un événement ...">
-                                <a class="btn-search" id="search"><i class="ion-android-search"></i></a>
-                                <a class="btn-adv" id="adv"><i class="ion-gear-b"></i></a>
+                                <a class="btn-search" data-toggle="tooltip" title="Recherche simple" id="search"><i class="ion-android-search"></i></a>
+                                <a class="btn-adv" data-toggle="tooltip" title="Recherche Avancée" id="adv"> <i class="ion-gear-b"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+
+
+
+                    <div class="col-md">
                         <ul class="navigation">
                             <!--  TODO: Navbar vraiment responsive-->
                             <!--
@@ -54,19 +57,45 @@
                             <a><i class="ion-android-star-outline"></i></a>
                         </li>
 -->
-                            <li><a class="btn btn-vide" href="#">Connexion</a></li>
+                            <li><a class="btn btn-vide" href="#" data-toggle="modal" data-target="#connexion">Connexion</a></li>
                             <li><a class="btn btn-plein" href="#">Inscription</a></li>
 
                         </ul>
                     </div>
                 </div>
             </div>
-        </nav>
 
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="connexionLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="connexionLabel">Entrez vos Identifiants</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id='formLogIn'>
+                            <input type="text" id="mailLogIn" class="loginInput" placeholder="Ex: name@domain.fr">
+                            <span class="invalid-hidden">Adresse e-mail invalide</span>
+                            <input type="password" id="mdpLogIn" class="loginInput" placeholder="Mot de passe">
+                            <span class="invalid-hidden">Au moins 6 caractères</span>
+                            <p class="invalid-hidden"><i class="ion-alert-circled"></i>Identifiants incorrects</p>
+                        </form>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-plein" id="logIn">Connexion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Carousel -->
     <div class="container-fluid car">
-    
+
 
 
         <div class="row">
@@ -105,7 +134,9 @@
     </div>
 
     <div class="container" id="contenu">
-        <div class="row" >
+
+
+        <div class="row">
             <div class="col" id="lastevents">
                 <h2>Derniers évènements ajoutés</h2>
             </div>
@@ -128,8 +159,9 @@
     ============================================================= -->
     <script type="text/javascript" src="js/evenements.js"></script>
     <script type="text/javascript" src="js/cards.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/formulaires.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 
 
 

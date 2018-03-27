@@ -16,9 +16,8 @@ var evenements = (function () {
 
             var contenu = document.querySelector("#contenu");
 
-
+            // COmpteur qui permet de creer une nouvelle ligne
             var compteur = 0;
-            /* Modifier syntaxe */
             for (let key of keys) {
 
                 
@@ -28,7 +27,7 @@ var evenements = (function () {
                     contenu.appendChild(row);
                 }
                 let col = document.createElement('div');
-                col.className = "col-12 col-md-3";
+                col.className = "col-md-6 col-xl-3 ";
                 var mycard = cards.createCard(events[key], key)
 
                 col.appendChild(mycard);

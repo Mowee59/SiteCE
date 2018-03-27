@@ -24,7 +24,7 @@ var cards = (function () {
             var card_desc = document.createElement('div');
             card_desc = document.createElement('div');
             card_desc.className = "card-desc";
-            card_desc.innerHTML = event.desc;
+            card_desc.innerHTML = event.desc.substring(0, 45) + "...";
 
             var title = document.createElement('h3');
             title.className = 'card-title';
