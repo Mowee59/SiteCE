@@ -1,0 +1,35 @@
+html, body{
+  height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+.main-content{
+  height: 100%;
+  margin-top: 67px;
+  margin-bottom: 20px;
+
+}
+
+.event-title {
+    background-color: rgba(0.7,0.7,0.7,0.4);
+    bottom: 40px;
+    position: absolute;
+    right: 15%;
+
+    left: 15%;
+    z-index: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+#map{
+  display: table 100%;
+  background-color: green;
+}
