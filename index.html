@@ -29,10 +29,10 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-md-2" id="logospace">
                         <img src="img/logo.png" alt="Logo" class="logo">
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-md-6">
                         <div class="container-fluid" id="barre-recherche">
                             <div class="col-md-12">
                                 <input type="text" id="input-nav" placeholder="Rechercher un événement ...">
@@ -45,19 +45,21 @@
 
 
                     <div class="col-md">
-                        <!--
+
                         <ul class="navigation">
 
                             <li><a class="btn btn-vide" href="#">Inscription</a></li>
 
                             <li><a class="btn btn-plein" href="#" data-toggle="modal" data-target="#connexion">Connexion</a></li>
 
-                        </ul> 
--->
-                        <ul class="navigation">
+                        </ul>
 
-                            <li><i data-toggle="tooltip" title="Ajouter un évènement" class="ion-plus-circled"></i></li>
-                            <li><a class="btn btn-vide" href="#">Déconnexion</a></li>
+                        <ul class="navigation member">
+
+
+                            <li><a href="formEvent.html" class="btn btn-plein">Ajouter un événement</a></li>
+                            <li><a href="#" class="btn btn-plein">Mes évènements</a></li>
+                            <li><a class="btn btn-vide" href="#" data-toggle="modal" data-target="#deco">Déconnexion</a></li>
 
                             <!--                            <li><a class="btn btn-plein" href="#" data-toggle="modal" data-target="#connexion">Connexion</a></li>-->
 
@@ -66,9 +68,9 @@
                 </div>
             </div>
 
-    
+
         </nav>
-        <!-- Modal -->
+        <!-- Modal Connexion-->
         <div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="connexionLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm modal-dialog-centered">
                 <div class="modal-content">
@@ -89,7 +91,27 @@
 
                     <div class="modal-footer">
 
-                        <button type="button" class="btn btn-plein" id="<logIn></logIn>">Connexion</button>
+                        <a href="#" class="btn btn-plein" id="logIn">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Déconnexion -->
+        <div class="modal fade" id="deco" tabindex="-1" role="dialog" aria-labelledby="decoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="decoLabel">Déconnexion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Vous allez être déconnecté, êtes vous sûr ?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-vide" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-plein" data-dismiss="modal" id="deconnexion">Déconnexion</button>
                     </div>
                 </div>
             </div>
@@ -159,7 +181,7 @@
                     <ul class="footer-nav">
                         <li><a href="#">Acceuil</a></li>
                         <li><a href="#">Recherche Avancée</a></li>
-                        <li><a href="#">Mentions légales</a></li>
+                        <li><a >CGU</a></li>
                     </ul>
                 </div>
                 <div class="col">

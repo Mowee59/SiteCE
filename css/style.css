@@ -57,7 +57,7 @@ nav {
     font-weight: 600;
 
     display: inline-block;
-
+    color: white;
     box-sizing: border-box;
     padding: 11px 12px;
 
@@ -147,10 +147,9 @@ input[type='text']:focus {
     transition: background-color .5s;
     text-decoration: none;
 
-    border-top: 2px solid #f2f3f5;
-    border-right: 2px solid transparent;
-    border-bottom: 2px solid #f2f3f5;
-    border-left: 2px solid transparent;
+
+    border: 2px solid transparent;
+
     border-radius: 0 2px 2px 0;
     background-color: #f2f3f5;
 }
@@ -239,6 +238,7 @@ input[type='text']:focus {
 
 #barre-recherche {
     margin-top: 7.5px;
+    margin-left: 50px;
 }
 
 .logo {
@@ -255,9 +255,9 @@ input[type='text']:focus {
 
 .navigation {
     float: right;
-
+    height: 60px;
     margin: 7px 5px;
-
+    font-size: 90%;
     list-style: none;
 }
 
@@ -273,6 +273,7 @@ input[type='text']:focus {
 .navigation li a {
     height: 45px;
 
+    vertical-align: middle;
     text-decoration: none;
 
     color: #555;
@@ -399,13 +400,18 @@ h2 {
 
     position: relative;
     top: 75px;
+    box-shadow: 0 0 3px 1px rgba(135, 135, 135, 1);
 
     max-width: 800px;
     margin: 0 auto;
     padding: 2% 4%;
 
     background-color: white;
+    
+    margin-bottom: 150px;
 }
+
+
 
 .btn-file {
     position: relative;
@@ -491,6 +497,10 @@ input[type='checkbox'] {
 
 .show {
     display: inline-block;
+}
+
+.hide {
+    display: none;
 }
 
 .correct {
@@ -591,6 +601,7 @@ footer {
 
 }
 
+
 .footer-nav li,
 .social li {
     display: inline-block;
@@ -632,12 +643,15 @@ footer p {
 .ion-social-facebook:hover {
     color: #3b5998;
 }
+
 .ion-social-twitter:hover {
     color: #00aced;
 }
+
 .ion-social-googleplus:hover {
     color: #dd4b39;
 }
+
 .ion-social-instagram:hover {
     color: #517fa4;
 }
@@ -654,12 +668,5 @@ footer p {
     color: #227093;
 }
 
-.tooltip {
-    font-size: 100%;
-    line-height: 100px;
-}
 
-.tooltip-inner {
-  max-width: 400px;
 
-}
