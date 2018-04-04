@@ -7,6 +7,35 @@
 
 
 
+
+
+        // Traduction francaise du datepicker
+       var $picker = $('.datepicker').pickadate({
+            monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+            monthsShort: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec'],
+            weekdaysFull: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+            weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+            today: 'Aujourd\'hui',
+            clear: 'Effacer',
+            close: 'Fermer',
+            firstDay: 1,
+            format: 'dd mmmm yyyy',
+            formatSubmit: 'yyyy/mm/dd',
+            labelMonthNext: "Mois suivant",
+            labelMonthPrev: "Mois précédent",
+            labelMonthSelect: "Sélectionner un mois",
+            labelYearSelect: "Sélectionner une année",
+            min: Date.now(),
+            selectYears: true,
+            selectMonths: true,
+            formatSubmit: 'd/mmm/yyyy',
+            hiddenName: true
+        });
+        
+        
+
+
+
         // Récupération des éléments 
         var eventsRef = firebase.database().ref('test');
         var champs = []; // Liste des champs à valider
@@ -15,10 +44,7 @@
         var lieuEvent = document.getElementById('lieuEvent');
         var btn_ajouter = document.getElementsByClassName('btn-ajouter')[0];
         var dureeEvent = document.getElementById('dureeEvent');
-        var annee = document.getElementById('anneeEvent');
-        var jour = document.getElementById('jourEvent');
-        var mois = document.getElementById('moisEvent');
-        var desc = document.getElementById('desc');
+        var date = document.getElementById('dateEvent').value.split(" ");
         var checkboxes = [].slice.call(document.querySelectorAll('input[type="checkbox"]'));
 
 
@@ -81,7 +107,7 @@
 
         // Clique sur le bouton ajouter
         btn_ajouter.addEventListener('click', function (event) {
-            
+
             var tags = "";
 
             for (let c of checkboxes) {
@@ -89,10 +115,11 @@
                     tags += c.value + " ";
                 }
             }
-            
+
             if (champs.every((element) => element.isCorrect()) && checkboxes.isCorrect()) {
-                console.log('aa')
                 eventsRef.push({
+                    "auteurid": user.uid,
+                    "auteur": user.pseudo,
                     "lieu": lieuEvent.value,
                     "nom": nomEvent.value,
                     "desc": desc.value,
@@ -105,7 +132,7 @@
                 });
                 alert('Evénement ajouté !');
             }
-            
+
             document.querySelector('form').reset();
         });
 

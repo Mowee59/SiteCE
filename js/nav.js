@@ -25,7 +25,7 @@
     var regex_mail = /^[a-zA-z0-9_.]+@\w{2,}\.[a-z]{2,3}/;
     var connexion = document.getElementById('logIn');
     var deconnexion = document.getElementById('deconnexion');
-    
+
 
     // Form connexion
     mailLogin.isCorrect = function () {
@@ -38,57 +38,12 @@
     }
     mdpLogin.addEventListener('blur', formulaire.validerChamps);
 
-    
+
     //Bouton Deconnexion Validation
-    deconnexion.addEventListener('click', function(event){
+    deconnexion.addEventListener('click', function (event) {
         firebase.auth().signOut();
     });
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // Evenement déclenché lors d'un changment d'état (conenxion/deconnexion)
-    firebase.auth().onAuthStateChanged(function (user) {
-        window.user = user; // On l'attache a windows pour pouvoir le consulter depuis n'importe ou
-        let nav_member = document.getElementsByClassName('member')[0];
-        let nav_guest = document.getElementsByClassName('navigation')[0];
 
-        if (user) {
-            
-                        nav_guest.classList.add('hide');
-
-            nav_guest.classList.remove('show');
-            document.getElementById('logospace').className="col-md-1";
-                        nav_member.classList.remove('hide');
-            nav_member.classList.add('show');
-
-
-        } else {
-            nav_member.classList.add('hide');
-            nav_guest.classList.add('show');
-            nav_guest.classList.remove('hide');
-            document.getElementById('logospace').className="col-md-2";
-                        nav_member.classList.remove('show');
-
-        }
-
-      
-
-
-    });
 
 
     connexion.addEventListener('click', function () {
@@ -99,8 +54,13 @@
                 .catch(function (err) {
                     console.log(err);
                 });
-            console.log('clique')
-
+            document.querySelector('#formLogIn p').classList.remove('show');
+            // TODO : Gerer erreurs
+            //Fermetur du modal bootstrap
+            $('#connexion').modal('hide');
+        } else {
+            
+            document.querySelector('#formLogIn p').classList.add('show');
         }
 
     });

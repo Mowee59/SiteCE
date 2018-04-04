@@ -2,7 +2,7 @@
 
 var formulaire = (function () {
 
-        console.log('AAA');
+    console.log('AAA');
 
     return {
         validerChamps: function (event) {

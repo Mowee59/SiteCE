@@ -12,4 +12,4 @@
     firebase.initializeApp(config);
     
 
-}())
+}());

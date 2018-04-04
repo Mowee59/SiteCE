@@ -11,12 +11,14 @@ var evenements = (function () {
         afficherEvent: function (snapshot) {
 
             var events = snapshot.val();
-
+            var keys = Object.keys(events);
+            keys.reverse();
             var contenu = document.querySelector("#contenu");
-
+            
             var compteur = 0;            // COmpteur qui permet de creer une nouvelle ligne
 
-            for ( let key in events) {
+            
+            for ( let key of keys) {
 
                 
                 if (compteur % 4 === 0) {
