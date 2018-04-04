@@ -672,5 +672,7 @@ footer p {
     padding-top: 75px;
 }
 
-
-
+#formSignIn input {
+        margin: 10px auto;
+    border: 2px solid #ccc;
+}

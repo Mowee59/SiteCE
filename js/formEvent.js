@@ -119,16 +119,17 @@
             if (champs.every((element) => element.isCorrect()) && checkboxes.isCorrect()) {
                 eventsRef.push({
                     "auteurid": user.uid,
-                    "auteur": user.pseudo,
+                    "auteur": user.displayName,
                     "lieu": lieuEvent.value,
                     "nom": nomEvent.value,
                     "desc": desc.value,
                     "date": {
-                        "annee": annee.value,
-                        "jour": jour.value,
-                        "mois": mois.value
+                        "annee": date[2].value,
+                        "jour": date[0].value,
+                        "mois": date[1].value
                     },
-                    "tags": tags
+                    "tags": tags,
+                    "duree": dureeEvent
                 });
                 alert('Evénement ajouté !');
             }

@@ -13,9 +13,8 @@ var member = (function () {
 
         if (user) {
             
+                   
             //chargement du pseudo
-            member.loadPseudo();
-
             nav_guest.classList.add('hide');
             nav_guest.classList.remove('show');
             document.getElementById('logospace').className = "col-md-1";
